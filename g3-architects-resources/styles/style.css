@@ -91,7 +91,7 @@ a {
 }
 .img-stack{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
   border-radius: 8px;
 }
@@ -117,7 +117,10 @@ a {
 }
 /* responsive layout design */
 @media screen and (max-width: 576px){
-  .nav-bar, .nav-links {
+  .nav-bar, .nav-links, .stack {
     flex-direction: column;
+  }
+  .image-stack{
+    grid-template-columns: 1fr;
   }
 }
