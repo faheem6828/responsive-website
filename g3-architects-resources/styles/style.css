@@ -28,7 +28,8 @@ header {
 
 /* header styles */
 .nav-bar,
-.banner {
+.banner,
+body {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -81,7 +82,39 @@ a {
   margin-bottom: 50px;
   margin-top: 32px;
 }
+/* main style layout */
+.stack{
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
+  gap: 76px;
+}
+.img-stack{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  border-radius: 8px;
+}
+.side-contents{
+  text-align: center;
+  max-width: 468px;
+  
+    
+}
+.side-contents-header{
+  font-size: 2.875rem;
+  font-weight: 500;
+  line-height: 54px;
+  text-align: left;
+}
 
+.side-contents-paragraph{
+  color: rgba(114, 114, 114, 1);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
 /* responsive layout design */
 @media screen and (max-width: 576px){
   .nav-bar, .nav-links {
